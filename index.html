@@ -539,51 +539,59 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="contact-form">
-          Name <br />
           <div class="modal-field">
-            <input
-              type="text"
-              name="user-name"
-              autofocus
-              class="contact-form-input"
-              required
-            />
+            <label>
+              <span class="input-text">Name</span>
+              <input
+                type="text"
+                name="user-name"
+                autofocus
+                class="contact-form-input"
+                required
+              />
+            </label>
             <svg width="12px" height="12px" class="contact-svg">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
           </div>
-          Phone <br />
           <div class="modal-field">
-            <input
-              type="tel"
-              name="user-tel"
-              class="contact-form-input"
-              required
-            />
+            <label>
+              <span class="input-text">Phone</span>
+              <input
+                type="tel"
+                name="user-tel"
+                class="contact-form-input"
+                required
+              />
+            </label>
             <svg width="12px" height="12px" class="contact-svg">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          Email <br />
           <div class="modal-field">
-            <input
-              type="email"
-              name="user-email"
-              class="contact-form-input"
-              required
-            />
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="user-email"
+                class="contact-form-input"
+                required
+              />
+            </label>
             <svg width="12px" height="12px" class="contact-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          Comment <br />
-          <textarea
-            name="textarea"
-            id=""
-            placeholder="Text input"
-            rows="5"
-            class="contact-textarea"
-          ></textarea>
+          <label>
+            <span>Comment</span>
+            <textarea
+              name="textarea"
+              id=""
+              placeholder="Text input"
+              rows="5"
+              class="contact-textarea"
+            ></textarea>
+          </label>
           <div class="checkbox-parameters">
             <input
               type="checkbox"

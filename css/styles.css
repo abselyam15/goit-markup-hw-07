@@ -641,10 +641,17 @@ input::placeholder {
   position: relative;
 }
 
+.input-text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
 .contact-svg {
   position: absolute;
   left: 17px;
-  top: 17px;
+  top: 35px;
 }
 
 .contact-form-input {
