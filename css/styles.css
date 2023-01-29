@@ -256,12 +256,6 @@ header .container {
   gap: 24px;
 }
 
-.team-text-div:hover,
-.team-text-div:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -329,7 +323,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 21px 38px;
+  padding: 15px 31px;
   fill: var(--light-slate);
   transition: border-color var(--tra), fill var(--tra);
 }
@@ -615,6 +609,12 @@ input::placeholder {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--cornflower);
+  transition: background-color var(--tra), fill var(--tra);
+}
+
+.modal-closer:hover {
+  background-color: var(--iris);
+  fill: var(--cornflower);
 }
 
 .is-hidden {
