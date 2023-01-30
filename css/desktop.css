@@ -3,16 +3,61 @@
     padding: 120px 0;
   }
 
+  .hero-section {
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+
+  .hero-header {
+    font-size: 56px;
+  }
+
+  .hero-btn {
+    margin-top: 64px;
+  }
+
+  .benefits-section {
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  .benefits-list {
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .benefits-icon {
+    display: block;
+  }
+
+  .benefits-header {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .benefits-text {
+    text-align: left;
+    width: 264px;
+  }
+
+  .examples-section {
+    display: block;
+  }
+
+  .team-cards {
+    gap: 24px;
+  }
+
   .container {
     width: 1158px;
   }
 
   .customers-list {
+    width: 1128px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
     gap: 24px;
-  }
-
-  .customers-item {
-    width: calc((100% - 90px) / 6);
   }
 
   .customers-link {

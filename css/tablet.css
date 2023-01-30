@@ -3,7 +3,28 @@
     width: 766px;
   }
 
+  .hero-header {
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .benefits-section {
+    margin: 0 auto;
+    width: 736px;
+  }
+
+  .benefits-text {
+    width: 356px;
+  }
+
+  .team-cards {
+    gap: 24px;
+    row-gap: 56px;
+  }
+
   .customers-list {
+    width: 552px;
+    margin: 0 auto;
     gap: 24px;
   }
 
