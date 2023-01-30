@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+}

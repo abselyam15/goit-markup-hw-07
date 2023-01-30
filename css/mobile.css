@@ -1,0 +1,21 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+  }
+
+  .customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+  }
+
+  .customers-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .customers-link {
+    width: 190px;
+    height: 88px;
+  }
+}
