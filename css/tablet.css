@@ -3,6 +3,27 @@
     width: 766px;
   }
 
+  .header-list {
+    display: flex;
+  }
+
+  .header-contacts {
+    display: block;
+    margin-top: 24px;
+    margin-right: 16px;
+  }
+
+  .header-contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .mob-menu,
+  .menu-btn {
+    display: none;
+  }
+
   .hero-header {
     font-size: 56px;
     line-height: 60px;
@@ -37,3 +58,45 @@
     height: 88px;
   }
 }
+
+/* footer {
+  height: 454px;
+  position: relative;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-info {
+  margin-left: 93px;
+  margin-right: 0;
+} */
+
+/* .social {
+  margin-right: 0;
+  margin-left: 24px;
+} */
+
+/* .subscribe {
+  position: absolute;
+  top: 278px;
+  width: 453px;
+  height: 80px;
+  margin-left: 93px;
+} */
+
+/* .subscribe-text {
+  position: absolute;
+} */
+
+/* .subscribe-div {
+  position: absolute;
+  top: 40px;
+} */
+
+/* .subscribe-form {
+  display: flex;
+  flex-direction: row;
+} */

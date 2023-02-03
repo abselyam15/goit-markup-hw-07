@@ -80,17 +80,12 @@ header .container {
 }
 
 .header-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
-.header-contacts .header-mail {
-  margin-right: 40px;
-}
-
-.header-tel,
-.header-mail {
-  padding: 24px 0;
+.header-contacts {
+  display: none;
 }
 
 .header-link {
@@ -115,6 +110,108 @@ header .container {
 .header-link:hover,
 .header-link:focus {
   color: var(--ocean);
+}
+
+.menu-btn {
+  width: 32px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.open-menu-icon {
+  stroke: var(--navy-blue);
+}
+
+/* ----------MOBILE-MENU---------- */
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.menu-closer-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding-bottom: 1.5px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--cornflower);
+}
+
+.mob-menu-list {
+  margin-top: 80px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.mob-menu-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+
+.mob-menu-link {
+  color: var(--navy-blue);
+}
+
+.mob-menu-contacts {
+  margin-left: 40px;
+}
+
+.mob-menu-tel {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.mob-menu-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.mms-list {
+  margin-top: 48px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.mms-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.mms-link {
+  fill: var(--white);
+}
+
+.mms-svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* ----------HERO---------- */
@@ -179,9 +276,6 @@ header .container {
 }
 
 /* ----------BENEFITS---------- */
-
-.benefits-section {
-}
 
 .benefits,
 .filters {
@@ -363,10 +457,12 @@ footer {
 
 footer .container {
   display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .footer-info {
-  padding-right: 120px;
+  margin: 0 auto;
 }
 
 .footer-logo {
@@ -375,6 +471,7 @@ footer .container {
   font-size: 18px;
   line-height: 1.167;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-transform: uppercase;
   color: var(--cloud);
@@ -397,7 +494,7 @@ footer .container {
 .social {
   width: 208px;
   height: 80px;
-  margin-right: 80px;
+  margin: 0 auto;
 }
 
 .social-text {
@@ -406,7 +503,7 @@ footer .container {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
-  text-align: left;
+  text-align: center;
 }
 
 .social-list {
@@ -443,24 +540,19 @@ footer .container {
 /* ----------SUBSCRIBE---------- */
 
 .subscribe {
-  position: relative;
-  width: 453px;
-  height: 80px;
+  margin: 0 auto;
 }
 
 .subscribe-text {
-  position: absolute;
+  margin-bottom: 16px;
   font-weight: 500;
   color: var(--white);
 }
 
-.subscribe-div {
-  position: absolute;
-  top: 40px;
-}
-
 .subscribe-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
 }
 
@@ -507,12 +599,14 @@ input::placeholder {
 /* ----------PORTFOLIO---------- */
 
 .portgolio-section {
+  width: 100%;
   letter-spacing: 0.02em;
-  padding-top: 96px;
+  padding: 48px 16px;
 }
 
 .filter-btn {
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
+  padding: 8px 16px;
   color: var(--iris);
   background: var(--cloud);
   border: 1px solid var(--cornflower);
@@ -530,19 +624,28 @@ input::placeholder {
 }
 
 .buttons-list {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  padding-bottom: 72px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 48px;
+  width: 263px;
 }
 
 .portfolio-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   width: 1128px;
   gap: 24px;
-  margin: 0 auto;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  align-items: center;
 }
 
 .portfolio-list li .card-undertext {
@@ -551,6 +654,11 @@ input::placeholder {
   border-bottom: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
+}
+
+.portfolio-card {
+  width: 396px;
+  height: 400px;
 }
 
 .portfolio-card:hover,

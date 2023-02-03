@@ -3,6 +3,26 @@
     padding: 120px 0;
   }
 
+  .header-list {
+    display: flex;
+  }
+
+  .header-contacts {
+    display: block;
+    margin: 0;
+  }
+
+  .header-contacts-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .mob-menu,
+  .menu-btn {
+    display: none;
+  }
+
   .hero-section {
     padding: 188px 0;
     max-width: 1440px;
@@ -65,3 +85,44 @@
     height: 88px;
   }
 }
+
+/* footer {
+  padding: 100px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-info {
+  margin-right: 120px;
+}
+
+.social {
+  margin-right: 80px;
+}
+
+.social-text {
+  text-align: left;
+}
+
+.subscribe {
+  position: relative;
+  width: 453px;
+  height: 80px;
+}
+
+.subscribe-text {
+  position: absolute;
+}
+
+.subscribe-div {
+  position: absolute;
+  top: 40px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+} */
