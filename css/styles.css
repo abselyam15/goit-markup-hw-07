@@ -112,6 +112,11 @@ header .container {
   color: var(--ocean);
 }
 
+.header-mail a,
+.header-tel a {
+  color: var(--slate);
+}
+
 .menu-btn {
   width: 32px;
   height: 22px;
