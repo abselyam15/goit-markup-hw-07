@@ -3,6 +3,10 @@
     padding: 120px 0;
   }
 
+  .hero-header {
+    line-height: 60px;
+  }
+
   .header-list {
     display: flex;
   }
