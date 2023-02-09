@@ -31,7 +31,11 @@
 
   .benefits-section {
     margin: 0 auto;
-    width: 736px;
+    max-width: 1000px;
+  }
+
+  .benefits-list {
+    gap: 24px;
   }
 
   .benefits-text {
